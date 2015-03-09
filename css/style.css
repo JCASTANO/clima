@@ -1,0 +1,187 @@
+html
+{
+	font-size:100%;
+}
+
+
+body
+{
+	font-family:'Lato', serif;
+	margin:0;
+	padding:0
+}
+
+button,
+html input input[type="button"],
+html input input[type="reset"],
+input[type="submit"]
+{
+	-webkit-appearance:none;
+}
+
+.btn
+{
+	display:inline-block;
+	line-height:1;
+	color:white;
+	text-align:center;
+	vertical-align: middle;
+	font-size:.8rem;
+	white-space: nowrap;
+	background-color:#ff4842;
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 0;
+	margin-left: 1px;
+	padding: 1em;
+	border-radius: 1px;
+}
+
+.btn:hover{
+	text-decoration: none;
+}
+
+.btn:active,
+.btn:focus{
+	outline: none;
+}
+
+/*
+Header Styles
+*/
+
+.main-header
+{
+	text-align:center;
+	background-color:#16210b;
+	color:white;
+	padding:.4em;
+}
+
+.main-header h1{
+	margin:0;
+}
+
+.main-header h2
+{
+	font-size:1rem;
+	font-weight:normal;
+}
+
+/*
+Modulo .search
+*/
+
+.search{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 0;
+	font-size: 3rem;
+}
+
+	.search__text{
+		width: 75%;
+		font-size: 1rem;
+	}
+
+/*
+Estilizamos el modulo de las cards, cada 
+resumen de tiempo de las ciudades
+*/
+
+.card
+{
+	position:relative;
+	height:30vh;
+	width:100vw;
+	background-color: #eaeaea;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	text-shadow: 0 0 3px black;
+	font-family: 'Lato', cursive;
+	padding: 1.5em;
+	margin-bottom: .5em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.card__title
+	{ 
+		margin:0;
+		text-align:center;
+	}
+
+	.card__time
+	{
+		font-size: .7rem;
+		text-align: center;
+		margin: 0;
+	}
+
+	.card__time::after, .card__time::before
+	{
+		content:" - ";
+	}
+
+	.card__info
+	{
+		position:absolute;
+		bottom:.4em;
+		left:.4em;
+		font-size: .7rem;
+		text-align:center;
+	}
+
+	.card__image
+	{
+		display:block;
+	}
+
+	.card__maxt
+	{
+		color: #37b948;
+		text-shadow:none;
+	}
+
+	.card__maxt::before
+	{
+		content: "max: ";
+	}
+
+	.card__maxt::after
+	{
+		content: "°C";
+	}
+
+	.card__mint
+	{
+		color: #bc2929;
+		text-shadow:none;
+	}
+
+	.card__mint::before
+	{
+		content: "min: ";
+	}
+
+	.card__mint::after
+	{
+		content: "°C";
+	}
+
+	.card__temp
+	{
+		font-size: 30px;
+	}
+
+	.card__temp::after
+	{
+		content: "°C";
+	}
